@@ -99,7 +99,7 @@ export default defineConfig({
   },
   shortcuts: {
     // Base
-    'btn-base': 'border-none border-radius-sm cursor-pointer font-semibold transition-colors duration-0 font-sans',
+    'btn-base': 'border-none cursor-pointer font-semibold transition-colors duration-0 font-sans',
 
     // Solid style
     'btn-solid-primary': 'btn-base bg-primary text-white hover:bg-primary-hover',
