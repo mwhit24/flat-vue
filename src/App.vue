@@ -1,6 +1,26 @@
 <template>
-  <div class="bg-neutral-50 p-8 min-h-screen font-sans">
-    <h1 class="text-3xl font-bold mb-8">Flat UI Buttons</h1>
+  <div class="bg-neutral-50 min-h-screen">
+
+	  <NavBar class="!bg-pink">
+      <template #logo>
+        <span class="text-white">FlatVue</span>
+      </template>
+
+      <template #links>
+        <NavLink href="#" active>Home</NavLink>
+        <NavLink href="#">Components</NavLink>
+        <NavLink href="#">Documentation</NavLink>
+        <NavLink href="#">Pricing</NavLink>
+      </template>
+
+      <template #actions>
+        <Button variant="secondary" buttonStyle="ghost" size="sm">Login</Button>
+        <Button variant="primary" size="sm">Sign Up</Button>
+      </template>
+    </NavBar>
+
+	  <div class="p-8">
+		  <h1 class="text-3xl font-bold mb-8">Flat UI Buttons</h1>
 
     <!-- Solid -->
     <section class="mb-8">
@@ -46,9 +66,12 @@
         <Button variant="primary" rounded="full">Full (pill)</Button>
       </div>
     </section>
+	  </div>
+
   </div>
 </template>
 
 <script setup lang="ts">
-import Button from "./Button/Button.vue"
+import { Button } from "./Button/index.ts"
+import { NavBar, NavLink } from "./NavBar";
 </script>

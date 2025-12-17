@@ -44,6 +44,9 @@ export default defineConfig({
     'rounded-md',
     'rounded-lg',
     'rounded-full',
+    // Nav
+    'nav-link',
+    'nav-link-active',
   ],
   theme: {
     colors: {
@@ -85,6 +88,31 @@ export default defineConfig({
         800: '#1F2937',
         900: '#111827',
       },
+      gold: '#eccc68',
+      coral: '#ff7f50',
+      pink: '#ff6b81',
+      lavender: '#a29bfe',
+      purple: '#6c5ce7',
+      violet: '#786fa6',
+      gray: {
+        DEFAULT: '#dcdde1',
+        dark: '#485460',
+        light: '#dfe4ea',
+      },
+      cyan: '#00d8d6',
+      sky: '#0be7fb',
+      blue: {
+        DEFAULT: '#0abde3',
+        indigo: '#686de0',
+        dark: '#30336b',
+        steel: '#95afc0',
+        prestige: '#2f3542'
+      },
+      teal: '#22a6b3',
+      magenta: '#be2edd',
+      indigo: '#4834d4',
+      navy: '#130f40',
+      slate: '#535c68',
     },
     borderRadius: {
       none: '0',
@@ -133,6 +161,10 @@ export default defineConfig({
     // Input shortcuts
     'input-base': 'border-2 border-neutral-300 rounded px-4 py-2 text-base font-sans outline-none transition-colors duration-200',
     'input-focus': 'focus:border-primary focus:ring-0',
+
+    // Nav Bar shortcuts
+    'nav-link': 'no-underline text-neutral-700 font-medium text-sm hover:text-primary hover:bg-neutral-100 transition-colors duration-0 cursor-pointer px-3 py-2 rounded-md',
+    'nav-link-active': 'text-blue-dark bg-neutral-100',
   },
   // Extract from Vue SFC files
   content: {
